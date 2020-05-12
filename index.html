@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>TOP Form Project</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-  
-  <script src="./index.js" type="text/javascript"></script>
+    <form novalidate>
+      <fieldset>
+        <!-- Form Name -->
+        <legend>Information request</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="" for="email">Email:</label>
+          <div class="">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="name@example.com"
+              required
+              minlength="4"
+            />
+            <span class="error" id="email-error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="" for="country">Country:</label>
+          <div class="">
+            <input
+              id="country"
+              name="country"
+              type="text"
+              placeholder="United Kingdom"
+              required
+              minlength="4"
+              maxlength="48"
+            />
+            <span class="error" id="country-error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="" for="post-code">Post Code:</label>
+          <div class="">
+            <input
+              id="post-code"
+              name="post-code"
+              type="text"
+              placeholder="A1 2BC"
+              required
+            />
+            <span class="error" id="post-code-error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="" for="passwordinput">Password:</label>
+          <div class="">
+            <input
+              id="passwordinput"
+              name="passwordinput"
+              type="password"
+              placeholder="password"
+              required
+              minlength="6"
+            />
+            <span class="error" id="password-error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="" for="check-password">Verify password:</label>
+          <div class="">
+            <input
+              id="check-password"
+              name="check-password"
+              type="password"
+              placeholder="password"
+              required
+            />
+            <span
+              class="error"
+              id="check-password-error"
+              aria-live="polite"
+            ></span>
+          </div>
+        </div>
+
+        <div>
+          <input type="submit" id="submit" value="Send Request" />
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="./index.js" type="text/javascript"></script>
   </body>
 </html>
